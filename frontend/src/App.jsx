@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./Pages/Home";
-import Login from "./Pages/Login";
-import Verify from "./Pages/Verify";
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import Verify from "./pages/Verify";
 import { UserData } from "./context/UserContext";
 import { LoadingBig } from "./component/Loading";
 
