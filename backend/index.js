@@ -22,13 +22,8 @@ app.use("/api/user", userRoutes);
 app.use("/api/chat",chatRoute);
 
 // Connect DB and start server
-
-app.listen(PORT, () => {
-  console.log(`server is working on port ${process.env.PORT}`);
-  connectDb();
-});
-// connectDb().then(() => {
-//   app.listen(PORT, () => {
-//     console.log(`Server is running on http://localhost:${PORT}`);
-//   });
+connectDb().then(() => {
+  app.listen(PORT, () => {
+    console.log(`Server is running on ${PORT}`);
+  });
 });
